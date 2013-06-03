@@ -70,7 +70,7 @@
 			led1 {
 				label = "beaglebone:green:usr1";
 				gpios = <&gpio2 22 0>;
-				linux,default-trigger = "mmc0";
+				linux,default-trigger = "heartbeat";
 				default-state = "off";
 			};
 

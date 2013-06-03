@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "building the derek.dtb from derek.dts using dtc"
+dtc -O dtb -o derek.dtb -@ derek.dts
