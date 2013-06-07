@@ -23,11 +23,11 @@
              __overlay__ {
                   pinctrl_test: DM_GPIO_Test_Pins {
 			pinctrl-single,pins = <
-				0x160 0x07  /* P9_12 muxRegOffset, OUTPUT MODE7 - The LED Output */
-				0x154 0x2f  /* P9_25 muxRegOffset, OUTPUT MODE7 - The Button Input */
-				0x834 0x37
-				0x830 0x27
-				0x824 0x2f
+				0x078 0x07  /* P9_12 60 muxRegOffset, OUTPUT MODE7 - The LED Output */
+				0x184 0x2f  /* P9_24 15 muxRegOffset, OUTPUT MODE7 - The Button Input */
+				0x034 0x37
+				0x030 0x27
+				0x024 0x2f
                        
                                /* GPIO(mode7) Input 0x07 pullup, 0x17 pulldown, 0x0f no pullup/down */
 			       /* GPIO(mode7) Output 0x27 pullup, 0x37 pulldown, 0x2f no pullup/down */
