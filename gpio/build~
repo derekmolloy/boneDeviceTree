@@ -2,4 +2,4 @@
 
 echo "Building the Simple GPIO Example - See derekmolloy.ie"
 
-g++ -O2 -Wall TestApplication.cpp SimpleGPIO.cpp -o TestApplication 
+g++ -O2 -Wall TestApplication.cpp -o TestApplication

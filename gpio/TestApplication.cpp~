@@ -47,10 +47,10 @@ int main(int argc, char *argv[]){
 	for(int i=0; i<5; i++){
 		cout << "Setting the LED on" << endl;
                 gpio_set_value(LEDGPIO, HIGH);
-		usleep(200000);         // on for 200ms
+		usleep(500000);
 		cout << "Setting the LED off" << endl;
                 gpio_set_value(LEDGPIO, LOW);
-		usleep(200000);         // off for 200ms
+		usleep(500000);
 	}
 
 	// Wait for the push button to be pressed
@@ -59,8 +59,7 @@ int main(int argc, char *argv[]){
 	unsigned int value = LOW;
 	do {
 		gpio_get_value(ButtonGPIO, &value); 
-		cout << ".";
-		usleep(1000);      // sleep for one millisecond
+		cout << value;
 	} while (value!=HIGH);
 	cout << endl <<  "Button was just pressed!" << endl;
 
