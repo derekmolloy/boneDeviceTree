@@ -5,6 +5,8 @@
 * it under the terms of the GNU General Purpose License Version 2 as
 * published by the Free Software Foundation
 *
+* Original from: github.com/jadonk/validation-scripts/blob/master/test-capemgr/ 
+*
 * Modified by Derek Molloy for the example on www.derekmolloy.ie
 * that maps GPIO pins for the example
 */
@@ -23,14 +25,15 @@
              __overlay__ {
                   pinctrl_test: DM_GPIO_Test_Pins {
 			pinctrl-single,pins = <
-				0x078 0x07  /* P9_12 60 muxRegOffset, OUTPUT MODE7 - The LED Output */
-				0x184 0x2f  /* P9_24 15 muxRegOffset, OUTPUT MODE7 - The Button Input */
-				0x034 0x37
-				0x030 0x27
-				0x024 0x2f
+
+				0x078 0x07  /* P9_12 60 OUTPUT MODE7 - The LED Output */
+				0x184 0x2f  /* P9_24 15 INPUT MODE7 none - The Button Input */
+				0x034 0x37  /* P8_11 45 INPUT MODE7 pulldown - Yellow Wire */
+				0x030 0x27  /* P8_12 44 INPUT MODE7 pullup - Green Wire */
+				0x024 0x2f  /* P8_13 23 INPUT MODE7 none - White Wire */
                        
-                               /* GPIO(mode7) Input 0x07 pullup, 0x17 pulldown, 0x0f no pullup/down */
-			       /* GPIO(mode7) Output 0x27 pullup, 0x37 pulldown, 0x2f no pullup/down */
+                               /* INPUT GPIO(mode7) 0x07 pullup, 0x17 pulldown, 0x0f no pullup/down */
+			       /* OUTPUT GPIO(mode7) 0x27 pullup, 0x37 pulldown, 0x2f no pullup/down */
 			>;
 		  };
              };
