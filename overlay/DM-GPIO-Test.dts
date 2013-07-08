@@ -32,13 +32,9 @@
 				0x030 0x27  /* P8_12 44 INPUT  MODE7 pulldown - Green Wire */
 				0x024 0x2f  /* P8_13 23 INPUT  MODE7 none     - White Wire */
                        
-<<<<<<< HEAD
-                               /* OUTPUT GPIO(mode7) 0x07 pullup, 0x17 pulldown, 0x0f no pullup/down */
-			       /* INPUT GPIO(mode7) 0x27 pullup, 0x37 pulldown, 0x2f no pullup/down */
-=======
-                               /* INPUT  GPIO(mode7) 0x07 pulldown, 0x17 pullup, 0x?f no pullup/down */
-			       /* OUTPUT GPIO(mode7) 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down */
->>>>>>> f83cf685371044f2fbc8e8da09759bed24038367
+                               /* OUTPUT  GPIO(mode7) 0x07 pulldown, 0x17 pullup, 0x?f no pullup/down */
+			       /* INPUT   GPIO(mode7) 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down */
+
 			>;
 		  };
              };
